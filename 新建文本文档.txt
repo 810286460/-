@@ -1,0 +1,19 @@
+sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallmedia --volume /Volumes/Mojave /Applications/Install\ macOS\ Mojave.app --nointeraction
+
+
+
+1. 打开Finder，点“位置->应用程序->实用工具->终端”，如下图： 
+
+　　2. 在终端窗口内输进sudo -s后回车，接着输进治理员密码，再回车： 
+
+　　3. 输进vi /Library/Preferences/SystemConfiguration/com.apple .Boot.plist 
+
+　　4. 将光标移到<string></string>后按“a”键，此时文件变为可编辑状态，按回车： 
+
+　　5. 输进<key>Graphics Mode</key>； 
+
+　　6. 输进<string>1440*900@60</string>，这里1440*900表示屏幕分辨率，60表示刷新率。 
+
+　　7. 按“Esc”退出文件编辑状态； 
+
+　　8. 同时按“Shift”和“:”键，输进x后按回车（退出并保存?） 
